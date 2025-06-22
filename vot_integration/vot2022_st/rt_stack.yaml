@@ -1,0 +1,18 @@
+title: VOTS2022 RT Challenge Validation Stack
+dataset: https://data.votchallenge.net/vot2022/sts/description.json
+url: https://www.votchallenge.net/vot2022/
+experiments:
+  realtime:
+    type: multistart
+    realtime:
+      grace: 3
+    analyses:
+      - type: multistart_eao_score
+        name: eaoscore
+        low: 115
+        high: 755
+      - type: multistart_eao_curve
+        name: eaocurve
+        high: 755
+      - type: multistart_average_ar
+        name: ar
