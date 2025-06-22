@@ -161,7 +161,7 @@ class VOTManager(object):
     """ VOT Manager is provides a simple interface for running multiple single object trackers in parallel. Trackers should implement a factory interface. """
 
     def __init__(self, factory, region_format, channels=None):
-        """ Constructor for the manager.
+        """ Constructor for the manager. 
         The factory should be a callable that accepts two arguments: image and region and returns a callable that accepts a single argument (image) and returns a region.
 
         Args:
